@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Ramia Aloufi Blog - List of all Blog
+{% endblock %}
+
+
+{% block content %}
+
+  <p><a href="/">HOME</a></p>
+  <h1>{{detail.Title}}</h1>
+  <h1>{{detail.category}}</h1>
+  <h1>{{detail.Date_Published}}</h1>
+  <h1>{{detail.content}}</h1>
+
+<p><a href="/posts">POSTS</a></p>
+
+{% endblock %}

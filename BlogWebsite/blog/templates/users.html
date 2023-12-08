@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Ramia Aloufi Blog - List of all Blog
+{% endblock %}
+
+
+{% block content %}
+
+  <p><a href="/">HOME</a></p>
+
+  <h1>Users</h1>
+  
+  <ul>
+    {% for x in allUsers %}
+      <li><a>username:{{ x.username}} | email: {{ x.email}} </a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}
